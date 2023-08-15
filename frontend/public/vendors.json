@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "dateCreated": "06-25-2023",
+    "imageURL": "https://lh5.googleusercontent.com/p/AF1QipOR3A4aL4EDiB8SBWpa5DcwSB58RqAVy50p1rt1=w228-h228-n-k-no",
+    "name": "El Botanaz",
+    "owner": "Gordo",
+    "food": "Mexican",
+    "city": "Denver",
+    "state": "CO",
+    "phoneNumber": "7205205234",
+    "status": "inactive",
+    "latitude": "39.742043",
+    "longitude": "-104.991531"
+  }
+]
