@@ -1,4 +1,3 @@
-// import { useAuthConsumer } from "../authProvider"
 import { ProtectedRootRoute } from "./ProtectedRootRoute"
 import ErrorPage from "../pages/error-page"
 import { Vendors } from "../features/vendors/Vendors"
@@ -9,9 +8,6 @@ import Logout from "../pages/Logout"
 import { useAppSelector } from "../app/hooks"
 
 export const Routes = () => {
-  // const { token } = useAuthConsumer()
-  // console.log("token de done?", token)
-
   const { user } = useAppSelector((state: { auth: any }) => state?.auth)
 
   // routes
@@ -67,18 +63,6 @@ export const Routes = () => {
       element: <Login />,
     },
   ]
-
-  console.log("!user", !user, "routes returned", [
-    // ok
-    ...routesForPublic,
-
-    // if there is a token then empty array (nada)
-    // if there is no token then spread the routesNotAuthOnly
-    ...(!!user ? [] : routesForNotAuthenticatedOnly),
-
-    // curious, token or no token we enable these routes hmm?
-    ...routesForAuthenticatedOnly,
-  ])
 
   return [
     // ok

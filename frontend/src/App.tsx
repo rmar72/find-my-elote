@@ -1,4 +1,3 @@
-import AuthProvider from "./authProvider"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import Routes from "./routes"
 import "./App.css"
@@ -8,9 +7,7 @@ function App() {
 
   return (
     <div className="container" style={{ border: "1px solid cyan" }}>
-      <AuthProvider>
-        <RouterProvider router={router} />
-      </AuthProvider>
+      <RouterProvider router={router} />
     </div>
   )
 }

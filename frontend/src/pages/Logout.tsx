@@ -1,20 +1,29 @@
+import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { useAuthConsumer } from "../authProvider"
+import { useAppDispatch } from "../app/hooks"
+import { logout } from "../features/authSlice"
 import { ThreeDots } from "react-loader-spinner"
 import "./Logout.css"
 
 const Logout = () => {
-  const { setToken } = useAuthConsumer()
   const navigate = useNavigate()
+  const dispatch = useAppDispatch()
 
   const handleLogout = () => {
-    setToken()
-    navigate("/", { replace: true })
+    setTimeout(() => {
+      dispatch(logout())
+      navigate("/login", { replace: true })
+    }, 500)
   }
 
-  setTimeout(() => {
+  useEffect(() => {
     handleLogout()
-  }, 3 * 1000)
+
+    return () => {
+      clearTimeout(handleLogout as any)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <div className="section-wrapper">

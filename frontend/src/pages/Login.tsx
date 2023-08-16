@@ -1,62 +1,45 @@
-import { ChangeEvent, useState, useEffect } from "react"
+import { ChangeEvent, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { useAuthConsumer } from "../authProvider"
 import { useAppDispatch, useAppSelector } from "../app/hooks"
 import { loginAuthHandler } from "../features/authSlice"
 import { useLoginMutation } from "../features/usersApiSlice"
+import { ThreeDots } from "react-loader-spinner"
 
 const Login = () => {
-  const { setToken } = useAuthConsumer()
-  const navigate = useNavigate()
+  const { user } = useAppSelector((state: { auth: any }) => state?.auth)
+  const dispatch = useAppDispatch()
+  const [login, { isLoading }] = useLoginMutation()
 
+  const navigate = useNavigate()
   const [email, setEmail] = useState<string>("")
   const [password, setPassword] = useState<string>("")
 
-  // const handleLogin = () => {
-  //   setToken("this is a test token")
-  //   navigate("/", { replace: true })
-  // }
-
-  const [login, { isLoading }] = useLoginMutation()
-
-  const { user } = useAppSelector((state: { auth: any }) => state?.auth)
-  console.log("user auth state", user)
-
-  useEffect(() => {
-    if (user) {
-      // navigate("/")
-      console.log(" did user change?!", user)
-    }
-  }, [user])
-
-  const dispatch = useAppDispatch()
-
-  // const handleLogin = () => {
-  //   // const user = { _id: 1, username: 'exampleuser' }
-  //   dispatch(login(user))
-  // }
-
-  // if user changes
-  // useEffect(() => {
-  //   if (user) {
-  //     navigate("/")
-  //   }
-  // }, [navigate, user])
-
-  // submit
   const submitHandler = async (e: { preventDefault: () => void }) => {
     e.preventDefault()
-    console.log("submitHandler CALLED")
-    try {
-      console.log("WE TRYING")
 
+    try {
       const res = await login({ email, password }).unwrap()
-      console.log("res", res)
       dispatch(loginAuthHandler({ ...res }))
       navigate("/", { replace: true })
     } catch (err) {
-      console.error("myERROR", err)
+      console.error("CATCH ERROR: ", err)
     }
+  }
+
+  if (isLoading) {
+    return (
+      <div className="section-wrapper">
+        <ThreeDots
+          height="80"
+          width="80"
+          radius="9"
+          color="#4fa94d"
+          ariaLabel="three-dots-loading"
+          wrapperStyle={{}}
+          visible={true}
+        />
+      </div>
+    )
   }
 
   return (
