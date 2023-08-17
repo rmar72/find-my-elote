@@ -1,8 +1,5 @@
 import { Navigate, Outlet } from "react-router-dom"
 import { useAppSelector } from "../app/hooks"
-import SideBar from "../components/SideBar"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
 
 export const ProtectedRootRoute = () => {
   const { user: userAuthenticated } = useAppSelector(
@@ -13,12 +10,5 @@ export const ProtectedRootRoute = () => {
     return <Navigate to="/login" />
   }
 
-  return (
-    <>
-      <Header />
-      <SideBar />
-      <Outlet />
-      <Footer />
-    </>
-  )
+  return <Outlet />
 }
