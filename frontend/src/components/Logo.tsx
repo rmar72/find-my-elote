@@ -1,11 +1,11 @@
 import React from "react"
-import logo from "./avatar.jpg"
+import EloteIcon from "./eloteIcon.png"
 
 const Logo: React.FC = () => {
   return (
     <span className="logo">
-      {/* <img src={logo} alt="Logo" /> */}
-      LaunchTime
+      <img src={EloteIcon} height="25" width="25" alt="Corn Snack Icon" />
+      Find My Elote
     </span>
   )
 }

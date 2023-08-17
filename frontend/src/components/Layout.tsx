@@ -17,7 +17,7 @@ const Layout: React.FC<Props> = ({ children, pageName }) => {
   return (
     <>
       <Helmet bodyAttributes={{ class: layoutClass }}>
-        <title>LaunchTime</title>
+        <title>Find my Elote</title>
       </Helmet>
       <>
         <main>{children}</main>

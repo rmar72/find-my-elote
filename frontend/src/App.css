@@ -6,7 +6,9 @@
   --gray: #DADEDF;
   --darkgray: #7F7F7F;
   --green: #54AD83;
-  --blue: #465fdf;
+  --blue: #1a72dd;
+  --purple-blue: #465fdf;
+  --purple: #1f38b3;
 }
 
 html {
@@ -14,7 +16,7 @@ html {
   box-sizing: border-box;
   font-family: Tahoma;
   color: var(--black);
-  border: 5px solid var(--green);
+  /* border: 5px solid var(--green); */
   padding: 10px;
 }
 
@@ -78,7 +80,7 @@ p {
 }
 
 .item {
-  border: 1px solid var(--black)
+  /* border: 1px solid var(--black) */
 }
 
 

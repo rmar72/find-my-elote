@@ -8,6 +8,7 @@ const Header: React.FC = () => {
   const avatarStyles = {
     backgroundImage: `url(${avatarImage})`,
   }
+
   return (
     <header className="header">
       <Container>
@@ -16,7 +17,7 @@ const Header: React.FC = () => {
         </p>
         <div className="header-account">
           <p className="header-avatar" style={avatarStyles}>
-            <span className="visually-hidden">Ruben Solorio</span>
+            {/* <span className="visually-hidden">Ruben Solorio</span> */}
           </p>
         </div>
       </Container>

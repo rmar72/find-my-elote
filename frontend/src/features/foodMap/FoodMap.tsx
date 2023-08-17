@@ -21,7 +21,7 @@ const FoodMap: React.FC = () => {
   const iconPerson = new L.Icon({
     iconUrl: elote,
     iconRetinaUrl: elote,
-    iconSize: new L.Point(60, 75),
+    iconSize: new L.Point(40, 55),
   })
 
   const dynamicElotero: any = {
@@ -68,7 +68,11 @@ const FoodMap: React.FC = () => {
       <button onClick={changeLoc} type="button">
         Poll location
       </button>
-      <MapContainer center={myLocation as any} zoom={17} scrollWheelZoom={true}>
+      <MapContainer
+        center={myLocation as any}
+        zoom={15}
+        scrollWheelZoom={false}
+      >
         {/* <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
