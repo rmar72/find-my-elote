@@ -1,15 +1,23 @@
 /* Footer */
 
-footer {
+.footer {
+  grid-area: footer;
+  
+  /* height: 2em; */
+  /* line-height: 1em; */
+  height: 40px;
   width: 100%;
-  height: 2em;
-  line-height: 2em;
-  color: purple;
+  padding: 5px;
   text-align: center;
-  background-color: var(--blue);
-}
+  /* background-color: var(--blue); */
+  border-top: 2px solid var(--blue);
 
-footer p {
-  font-size: 1em;
-  margin: 0;
+  .footer-text {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+    color: var(--blue);
+  }
 }

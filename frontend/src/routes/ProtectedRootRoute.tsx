@@ -6,9 +6,5 @@ export const ProtectedRootRoute = () => {
     (state: { auth: any }) => state?.auth,
   )
 
-  if (!userAuthenticated) {
-    return <Navigate to="/login" />
-  }
-
-  return <Outlet />
+  return userAuthenticated ? <Outlet /> : <Navigate to="/login" />
 }

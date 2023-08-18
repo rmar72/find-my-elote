@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import Layout from "../../components/Layout"
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet"
-import "./FoodMap.module.css"
+import "./FoodMap.css"
 import L from "leaflet"
 import elote from "./output.png"
 

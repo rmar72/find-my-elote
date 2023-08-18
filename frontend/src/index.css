@@ -1,5 +1,39 @@
+:root {
+  --yellow: #ffc600;
+  --black: #000000;
+  --gray: #DADEDF;
+  --darkgray: #7F7F7F;
+  --green: #54AD83;
+  --blue: #1a72dd;
+  --purple-blue: #465fdf;
+  --purple: #1f38b3;
+}
+
+html {
+  /* border-box: add border and padding without increasing box-size */
+  box-sizing: border-box;
+  font-family: Tahoma;
+  color: var(--black);
+  width:100%;
+  height:100%;
+  margin:0px;
+  padding:0;
+}
+/* inherit box-sizing from .html */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
+  background-color: var(--gray);
+  /* width: 100vw;
+  height: 100vh; */
+  width:100%;
+  height:100%;
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -11,3 +45,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
