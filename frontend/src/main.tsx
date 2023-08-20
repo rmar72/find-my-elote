@@ -16,18 +16,18 @@ import FoodMap from "./features/foodMap/FoodMap"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
 import Logout from "./pages/Logout"
-import { ProtectedRootRoute } from "./routes/ProtectedRootRoute"
+import { ProtectedRoute } from "./routes/ProtectedRoute"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />} errorElement={<ErrorPage />}>
       <Route index={true} path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/logout" element={<Logout />} />
       {/* <Route path="/register" element={<RegisterScreen />} /> */}
-      <Route path="" element={<ProtectedRootRoute />}>
+      <Route path="" element={<ProtectedRoute />}>
         <Route path="/vendors" element={<Vendors />} />
         <Route path="/foodMap" element={<FoodMap />} />
+        <Route path="/logout" element={<Logout />} />
       </Route>
     </Route>,
   ),

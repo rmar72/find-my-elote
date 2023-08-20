@@ -1,12 +1,15 @@
 import { ChangeEvent, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 import { useAppDispatch, useAppSelector } from "../app/hooks"
 import { loginAuthHandler } from "../features/authSlice"
 import { useLoginMutation } from "../features/usersApiSlice"
 import { ThreeDots } from "react-loader-spinner"
 
 const Login = () => {
-  const { user } = useAppSelector((state: { auth: any }) => state?.auth)
+  const location = useLocation()
+  const origin = location.state?.from?.pathname || "/"
+
+  // const { user } = useAppSelector((state: { auth: any }) => state?.auth)
   const dispatch = useAppDispatch()
   const [login, { isLoading }] = useLoginMutation()
 
@@ -20,7 +23,7 @@ const Login = () => {
     try {
       const res = await login({ email, password }).unwrap()
       dispatch(loginAuthHandler({ ...res }))
-      navigate("/", { replace: true })
+      navigate(origin, { replace: true })
     } catch (err) {
       console.error("CATCH ERROR: ", err)
     }
