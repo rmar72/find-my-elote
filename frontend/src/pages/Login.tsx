@@ -6,6 +6,7 @@ import { useLoginMutation } from "../features/usersApiSlice"
 import { ThreeDots } from "react-loader-spinner"
 
 const Login = () => {
+  const navigate = useNavigate()
   const location = useLocation()
   const origin = location.state?.from?.pathname || "/"
 
@@ -13,7 +14,6 @@ const Login = () => {
   const dispatch = useAppDispatch()
   const [login, { isLoading }] = useLoginMutation()
 
-  const navigate = useNavigate()
   const [email, setEmail] = useState<string>("")
   const [password, setPassword] = useState<string>("")
 
