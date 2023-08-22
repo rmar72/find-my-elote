@@ -3,10 +3,10 @@ import List from "@mui/material/List"
 import ListItem from "@mui/material/ListItem"
 import ListItemButton from "@mui/material/ListItemButton"
 import ListItemText from "@mui/material/ListItemText"
+import { v4 as uuidv4 } from "uuid"
 
 const Navigation = (): JSX.Element => {
   const navItems = [
-    <NavLink to={"/"}>Home</NavLink>,
     <NavLink to={"/vendors"}>Vendors</NavLink>,
     <NavLink to={"/foodmap"}>Food Map</NavLink>,
   ]
@@ -14,8 +14,8 @@ const Navigation = (): JSX.Element => {
   return (
     <nav className="navbar nav">
       <List>
-        {navItems.map((navItem) => (
-          <ListItem disablePadding>
+        {navItems.map((navItem, i) => (
+          <ListItem key={uuidv4()} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={navItem} />
             </ListItemButton>
