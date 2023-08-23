@@ -1,4 +1,4 @@
-import "./Footer.css"
+// import "./Footer.css"
 import EloteIcon from "./eloteIcon.png"
 
 const Footer = (): JSX.Element => {
