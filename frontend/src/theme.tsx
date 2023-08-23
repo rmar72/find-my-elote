@@ -23,8 +23,8 @@ const mainTheme = createTheme({
       dark: "#01579b",
     },
     secondary: {
-      main: "#2e7d32", // soft herbal green
-      light: "##D6E8A5", // Light Pastel Green
+      main: "#C1D37F", // soft herbal green
+      light: "#D6E8A5", // Light Pastel Green
       dark: "#9DB770", // Dark Olive Green
     },
     error: {

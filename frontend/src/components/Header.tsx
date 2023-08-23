@@ -64,7 +64,7 @@ const Header = (): JSX.Element => {
 
   return (
     <header>
-      <Appbar sx={{ bgcolor: "primary.main", color: "white.dark" }}>
+      <Appbar sx={{ bgcolor: "secondary.main", color: "white.dark" }}>
         <Toolbar>
           <IconButton
             aria-label="Hamburger menu open drawer button"

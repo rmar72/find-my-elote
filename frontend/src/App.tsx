@@ -6,15 +6,13 @@ import Container from "@mui/material/Container"
 
 function App() {
   return (
-    <>
+    <Stack>
       <Header />
-      <Stack>
-        <Container maxWidth={"xl"} disableGutters={true} sx={{ mt: "60px" }}>
-          <Outlet />
-        </Container>
-        <Footer />
-      </Stack>
-    </>
+      <Container maxWidth={"xl"} disableGutters={true} sx={{ mt: "45px" }}>
+        <Outlet />
+      </Container>
+      <Footer />
+    </Stack>
   )
 }
 
