@@ -6,7 +6,7 @@ const Home = (): JSX.Element => (
   <>
     <ProductHeroLayout />
     <Container maxWidth={"xl"}>
-      <Box sx={{ bgcolor: "orange.light", height: "60vh" }} />
+      <Box sx={{ bgcolor: "customPalette.orange.light", height: "60vh" }} />
     </Container>
   </>
 )

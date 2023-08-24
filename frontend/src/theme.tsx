@@ -1,16 +1,52 @@
 import { createTheme } from "@mui/material/styles"
 
-declare module "@mui/material/styles" {
-  interface Palette {
-    white: Palette["primary"]
-    black: Palette["primary"]
-    orange: Palette["primary"]
-  }
+// declare module "@mui/material/styles" {
+//   interface Palette {
+//     white: Palette["primary"]
+//     black: Palette["primary"]
+//     orange: Palette["primary"]
+//   }
 
+//   interface PaletteOptions {
+//     white?: PaletteOptions["primary"]
+//     black?: PaletteOptions["primary"]
+//     orange?: PaletteOptions["primary"]
+//     softColors?: Palette
+//   }
+// }
+
+interface CustomPaletteColors {
+  main: string
+  light?: string
+  dark?: string
+}
+
+interface CustomSoftColors {
+  softblue1: string
+  softblue2: string
+  softorange: string
+  softrose: string
+}
+
+interface CustomPalette {
+  white: CustomPaletteColors
+  black: CustomPaletteColors
+  orange: CustomPaletteColors
+  softColors?: CustomSoftColors
+}
+declare module "@mui/material/styles" {
+  interface Theme {
+    customPalette: CustomPalette
+  }
+  // allow configuration using `createTheme`
+  interface ThemeOptions {
+    customPalette?: CustomPalette
+  }
+  interface Palette {
+    customPalette?: CustomPalette
+  }
   interface PaletteOptions {
-    white?: PaletteOptions["primary"]
-    black?: PaletteOptions["primary"]
-    orange?: PaletteOptions["primary"]
+    customPalette?: CustomPalette
   }
 }
 
@@ -23,7 +59,7 @@ const mainTheme = createTheme({
       dark: "#01579b",
     },
     secondary: {
-      main: "#C1D37F", // soft herbal green
+      main: "#C1D37F", // soft green
       light: "#D6E8A5", // Light Pastel Green
       dark: "#9DB770", // Dark Olive Green
     },
@@ -43,19 +79,27 @@ const mainTheme = createTheme({
       light: "#4caf50",
       dark: "#1b5e20",
     },
-    white: {
-      main: "#FFF",
-      dark: "#F5F5F5", //smoky white
-    },
-    black: {
-      main: "#000",
-      light: "#333333", // charcoal black
-      dark: "#141414", // midnight black
-    },
-    orange: {
-      main: "#FF7043", // Orangish-Red
-      light: "#FFC7A0", // light peach (soft)
-      dark: "#1b5e20",
+    customPalette: {
+      white: {
+        main: "#FFF",
+        dark: "#F5F5F5", //smoky white
+      },
+      black: {
+        main: "#000",
+        light: "#333333", // charcoal black
+        dark: "#141414", // midnight black
+      },
+      orange: {
+        main: "#FF7043", // Orangish-Red
+        light: "#FFC7A0", // light peach (soft)
+        dark: "#1b5e20",
+      },
+      softColors: {
+        softblue1: "#6BA4BB", // (Soft, muted blue)
+        softblue2: "#7F8CC1", // (Cool, light blue)
+        softorange: "#F3A712", // (Bright, warm orange)
+        softrose: "#D8AAB7", // (Dusty rose)
+      },
     },
   },
 })

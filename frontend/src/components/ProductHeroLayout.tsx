@@ -46,7 +46,7 @@ const ProductHeroLayout = (): JSX.Element => {
         <Typography
           variant="h5"
           sx={{
-            color: "white.dark",
+            color: "customPalette.white.dark",
             mb: 4,
             mt: { xs: 4, sm: 4 },
             textAlign: "center",
@@ -65,7 +65,7 @@ const ProductHeroLayout = (): JSX.Element => {
         <Typography
           variant="body2"
           color="inherit"
-          sx={{ color: "white.dark", mt: 2, zIndex: 3 }}
+          sx={{ color: "customPalette.white.dark", mt: 2, zIndex: 3 }}
         >
           Join us in supporting local vendors
         </Typography>
@@ -79,7 +79,7 @@ const ProductHeroLayout = (): JSX.Element => {
           top: 0,
           bottom: 0,
           backgroundColor: "common.black",
-          opacity: 0.4,
+          opacity: 0.3,
           zIndex: 2,
         }}
       />
