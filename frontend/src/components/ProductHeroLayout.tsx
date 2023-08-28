@@ -86,7 +86,7 @@ const ProductHeroLayout = (): JSX.Element => {
           top: 0,
           bottom: 0,
           backgroundColor: "customPalette.black.light",
-          opacity: 0.3,
+          opacity: 0.4,
           zIndex: 2,
         }}
       />

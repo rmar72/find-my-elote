@@ -31,7 +31,7 @@ const ProductValues = () => {
           component="img"
           src={productCurvyLines}
           alt="curvy lines"
-          sx={{ pointerEvents: 'none', position: 'absolute', top: -180, left: -40 }}
+          sx={{ pointerEvents: 'none', position: 'absolute', top: -180, left: -160 }}
         />
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
