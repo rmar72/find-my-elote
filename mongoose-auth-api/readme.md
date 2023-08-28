@@ -22,7 +22,6 @@ It includes the following:
 NODE_ENV = development
 PORT = 5000
 MONGO_URI = your mongodb uri
-JWT_SECRET = 'abc123'
+JWT_SECRET = 'enter a secret key'
 ```
 
-mock JWT_SECRET ^

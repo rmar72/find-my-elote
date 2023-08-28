@@ -22,7 +22,7 @@ const ProductHeroLayout = (): JSX.Element => {
       <Box
         sx={{
           backgroundImage: `url(${productBackground})`,
-          bgcolor: "#7fc7d9", // Average color of the background image.
+          bgcolor: "#E3735E", // Average color of the background image.
           backgroundPosition: "bottom",
           height: "100%",
           width: "100%",
@@ -34,13 +34,14 @@ const ProductHeroLayout = (): JSX.Element => {
         <Typography
           variant="h3"
           sx={{
-            color: "secondary.light",
+            // color: "secondary.light",
+            color: "customPalette.white.dark",
             mt: 10,
             textAlign: "center",
             zIndex: 3,
           }}
         >
-          Discover the Essence of Local Street Cuisine
+          Empowering Palates, Celebrating Culture
         </Typography>
         <span>____</span>
         <Typography
@@ -58,7 +59,13 @@ const ProductHeroLayout = (): JSX.Element => {
         <Button
           variant="contained"
           size="large"
-          sx={{ minWidth: 200, bgcolor: "primary.light", zIndex: 3 }} // bgcolor: "#ff3366"
+						sx={{
+						minWidth: 200,
+						bgcolor: "#E3735E",
+						zIndex: 3,
+						"&:hover": {
+							bgcolor: "#F5A193", color: "#E3735E"
+						}}}
         >
           Register
         </Button>
@@ -67,7 +74,7 @@ const ProductHeroLayout = (): JSX.Element => {
           color="inherit"
           sx={{ color: "customPalette.white.dark", mt: 2, zIndex: 3 }}
         >
-          Join us in supporting local vendors
+        	Uplift Local Vendors
         </Typography>
         <span>{"--->"}</span>
       </Box>
