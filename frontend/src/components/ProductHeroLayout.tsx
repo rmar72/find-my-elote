@@ -22,7 +22,7 @@ const ProductHeroLayout = (): JSX.Element => {
       <Box
         sx={{
           backgroundImage: `url(${productBackground})`,
-          bgcolor: "#E3735E", // Average color of the background image.
+          bgcolor: "customPalette.softColors.terracota",
           backgroundPosition: "bottom",
           height: "100%",
           width: "100%",
@@ -34,7 +34,6 @@ const ProductHeroLayout = (): JSX.Element => {
         <Typography
           variant="h3"
           sx={{
-            // color: "secondary.light",
             color: "customPalette.white.dark",
             mt: 10,
             textAlign: "center",
@@ -61,10 +60,11 @@ const ProductHeroLayout = (): JSX.Element => {
           size="large"
 						sx={{
 						minWidth: 200,
-						bgcolor: "#E3735E",
+						bgcolor: "customPalette.softColors.terracota",
 						zIndex: 3,
 						"&:hover": {
-							bgcolor: "#F5A193", color: "#E3735E"
+							bgcolor: "customPalette.softColors.terracotaLight",
+							color: "customPalette.softColors.terracota",
 						}}}
         >
           Register
@@ -85,7 +85,7 @@ const ProductHeroLayout = (): JSX.Element => {
           right: 0,
           top: 0,
           bottom: 0,
-          backgroundColor: "common.black",
+          backgroundColor: "customPalette.black.light",
           opacity: 0.3,
           zIndex: 2,
         }}

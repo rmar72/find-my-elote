@@ -26,6 +26,15 @@ interface CustomSoftColors {
   softblue2: string
   softorange: string
   softrose: string
+  terracota: string
+  terracotaLight: string
+  terracotaDark: string
+  palePink: string
+  lightCream: string
+  softSageCream: string
+  deepMochaBrown: string
+  gentleSkyblue: string
+  warmTerraCota: string
 }
 
 interface CustomPalette {
@@ -99,6 +108,16 @@ const mainTheme = createTheme({
         softblue2: "#7F8CC1", // (Cool, light blue)
         softorange: "#F3A712", // (Bright, warm orange)
         softrose: "#D8AAB7", // (Dusty rose)
+        terracota: "#E3735E",
+        terracotaLight: "#F5A193",
+        terracotaDark: "#C95844",
+        // terracotaCompliments:
+        palePink: "#fff5f8",
+        lightCream: "#F9F5E6",
+        softSageCream: "#A7CDA8",
+        deepMochaBrown: "#4E3629",
+        gentleSkyblue: "#94B7D4",
+        warmTerraCota: "#B36B52",
       },
     },
   },

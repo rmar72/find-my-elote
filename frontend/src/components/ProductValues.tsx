@@ -20,7 +20,11 @@ const ProductValues = () => {
   return (
     <Box
       component="section"
-      sx={{ display: 'flex', overflow: 'hidden', bgcolor: '#fff5f8' }}
+      sx={{
+				display: 'flex',
+				overflow: 'hidden',
+				bgcolor: 'customPalette.softColors.palePink'
+			}}
     >
       <Container sx={{ mt: 15, mb: 30, display: 'flex', position: 'relative' }}>
         <Box
