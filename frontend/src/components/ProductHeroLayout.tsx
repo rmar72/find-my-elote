@@ -16,6 +16,8 @@ const ProductHeroLayout = (): JSX.Element => {
         alignItems: "center",
         height: "80vh",
         position: "relative",
+        pb: 0,
+        mb: 0,
         // height: "100%",
       }}
     >
