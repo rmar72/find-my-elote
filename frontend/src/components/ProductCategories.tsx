@@ -54,48 +54,48 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 
 const images = [
   {
-    url: 'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400',
-    title: 'Snorkeling',
+    url: 'https://www.shekeepsalovelyhome.com/wp-content/uploads/2020/07/Esquites_Mexican-Corn-Salad_elote-1.jpg',
+    title: 'X',
     width: '40%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400',
-    title: 'Massage',
+    url: 'https://media.cnn.com/api/v1/images/stellar/prod/220526093031-13-body-best-asian-street-foods-sai-krok-isan.jpg?c=original&q=w_1280,c_fill',
+    title: 'X',
     width: '20%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400',
-    title: 'Hiking',
+    url: 'https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/47cab139-bfe5-4002-aad5-2afc4941d34c.jpeg',
+    title: 'X',
     width: '40%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1453747063559-36695c8771bd?auto=format&fit=crop&w=400',
-    title: 'Tour',
+    url: 'https://tb-static.uber.com/prod/image-proc/processed_images/58601ef6f0c683bda92814c695a6e62a/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg',
+    title: 'X',
     width: '38%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1523309996740-d5315f9cc28b?auto=format&fit=crop&w=400',
-    title: 'Gastronomy',
+    url: 'https://img.atlasobscura.com/Ojjf7QZ2NmDX3aHbDOsMOVeGXrpNsV__QTfumjnY_qs/rs:fill:780:520:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wNDE3/NDQ5NWY2NWI2OGRh/MjlfTWFndXJvX3p1/a2Vfa3VzaGlfYnlf/am1zdWFyZXpfaW5f/TmlzaGlraV9JY2hp/YmEsX0t5b3RvLmpw/Zw.jpg',
+    title: 'X',
     width: '38%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400',
-    title: 'Shopping',
+    url: 'https://www.humanitieskansas.org/assets/images/NoCrop_1920x1280/c16104d537374039b9e21c98d5182190.jpg',
+    title: 'X',
     width: '24%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400',
-    title: 'Walking',
+    url: 'https://www.mylatinatable.com/wp-content/uploads/2019/07/Esquites-1.jpg',
+    title: 'X',
     width: '40%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400',
-    title: 'Fitness',
+    url: 'https://infatuation.imgix.net/media/images/guides/asian-owned-bakeries-nyc/NYC_Bakery_BibbleAndSip_1.png',
+    title: 'X',
     width: '20%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400',
-    title: 'Reading',
+    url: 'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.mlive.com/home/mlive-media/width2048/img/advanceopinion_impact/photo/6-1-recipe-w-kim-b7a12b2bdc5c41ea.jpg',
+    title: 'X',
     width: '40%',
   },
 ];
@@ -112,7 +112,7 @@ export default function ProductCategories() {
 				sx={{ py: 4, bgcolor: "customPalette.white.dark" }}
 			>
 			<Typography variant="h4" align="center" component="h2">
-        For all tastes and all desires
+				FOR ALL TASTES AND ALL DESIRES
       </Typography>
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (

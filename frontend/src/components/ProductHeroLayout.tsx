@@ -42,7 +42,7 @@ const ProductHeroLayout = (): JSX.Element => {
             zIndex: 3,
           }}
         >
-          Empowering Palates, Celebrating Culture
+          Celebrating Culture
         </Typography>
         <span>____</span>
         <Typography
