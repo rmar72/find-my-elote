@@ -1,37 +1,42 @@
-import { Theme } from '@mui/material/styles'
-import { SxProps } from '@mui/system'
-import Box from '@mui/material/Box'
-import Grid from '@mui/material/Grid'
-import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography'
-import productCurvyLines from './productCurvyLines.png'
-import foodCart from './food-cart-svgrepo-com.svg' 
-import foodTruck from './foodtruck.png'
-import foodDelivery from './fast-food-delivery-12997.svg'
+import { Theme } from "@mui/material/styles"
+import { SxProps } from "@mui/system"
+import Box from "@mui/material/Box"
+import Grid from "@mui/material/Grid"
+import Container from "@mui/material/Container"
+import Typography from "@mui/material/Typography"
+import productCurvyLines from "./productCurvyLines.png"
+import foodCart from "./food-cart-svgrepo-com.svg"
+import foodTruck from "./foodtruck.png"
+import foodDelivery from "./fast-food-delivery-12997.svg"
 
 const item: SxProps<Theme> = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
   px: 5,
-};
+}
 
 const ProductValues = () => {
   return (
     <Box
       component="section"
       sx={{
-				display: 'flex',
-				overflow: 'hidden',
-				bgcolor: 'customPalette.softColors.palePink'
-			}}
+        display: "flex",
+        overflow: "hidden",
+        bgcolor: "customPalette.softColors.palePink",
+      }}
     >
-      <Container sx={{ mt: 15, mb: 30, display: 'flex', position: 'relative' }}>
+      <Container sx={{ mt: 15, mb: 24, display: "flex", position: "relative" }}>
         <Box
           component="img"
           src={productCurvyLines}
           alt="curvy lines"
-          sx={{ pointerEvents: 'none', position: 'absolute', top: -180, left: -160 }}
+          sx={{
+            pointerEvents: "none",
+            position: "absolute",
+            top: -180,
+            left: -160,
+          }}
         />
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
@@ -46,7 +51,8 @@ const ProductValues = () => {
                 Find Local Food Gems
               </Typography>
               <Typography variant="h5">
-                Our app is your guide to uncover hidden culinary gems in charming neighborhoods, ready to be savored.
+                Our app is your guide to uncover hidden culinary gems in
+                charming neighborhoods, ready to be savored.
               </Typography>
             </Box>
           </Grid>
@@ -62,7 +68,8 @@ const ProductValues = () => {
                 Diverse Cuisine
               </Typography>
               <Typography variant="h5">
-                Mobile culinary havens are redefining on-the-go dining/snacking, bringing together taste innovation and convenience.
+                Mobile culinary havens are redefining on-the-go dining/snacking,
+                bringing together taste innovation and convenience.
               </Typography>
             </Box>
           </Grid>
@@ -78,14 +85,15 @@ const ProductValues = () => {
                 Local Community
               </Typography>
               <Typography variant="h5">
-              	Contribute to the growth of small businesses and celebrating the diverse tapestry of flavors that your community offers.
+                Contribute to the growth of small businesses and celebrating the
+                diverse tapestry of flavors that your community offers.
               </Typography>
             </Box>
           </Grid>
         </Grid>
       </Container>
     </Box>
-  );
+  )
 }
 
 export default ProductValues
