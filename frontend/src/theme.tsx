@@ -35,6 +35,9 @@ interface CustomSoftColors {
   deepMochaBrown: string
   gentleSkyblue: string
   warmTerraCota: string
+  cremita: string
+  cremitalight: string
+  cremitadark: string
 }
 
 interface CustomPalette {
@@ -68,17 +71,17 @@ const mainTheme = createTheme({
       dark: "#01579b",
     },
     secondary: {
-      main: "#C1D37F", // soft green
-      light: "#D6E8A5", // Light Pastel Green
-      dark: "#9DB770", // Dark Olive Green
+      main: "#C1D37F", // softgreen
+      light: "#D6E8A5", // Light PastelGreen
+      dark: "#9DB770", // Dark OliveGreen
     },
     error: {
-      main: "#E63946", // Hungry Red
+      main: "#E63946", // HungryRed
       light: "#ef5350",
       dark: "#c62828",
     },
     info: {
-      main: "#6B6E70", // Earthy Gray
+      main: "#6B6E70", // EarthyGray
       light: "#A6A9AA",
       dark: "#46484A",
     },
@@ -91,12 +94,12 @@ const mainTheme = createTheme({
     customPalette: {
       white: {
         main: "#FFF",
-        dark: "#F5F5F5", //smoky white
+        dark: "#F5F5F5", //smokywhite
       },
       black: {
         main: "#000",
-        light: "#333333", // charcoal black
-        dark: "#141414", // midnight black
+        light: "#333333", // charcoalblack
+        dark: "#141414", // midnightblack
       },
       orange: {
         main: "#FF7043", // Orangish-Red
@@ -104,9 +107,9 @@ const mainTheme = createTheme({
         dark: "#1b5e20",
       },
       softColors: {
-        softblue1: "#6BA4BB", // (Soft, muted blue)
-        softblue2: "#7F8CC1", // (Cool, light blue)
-        softorange: "#F3A712", // (Bright, warm orange)
+        softblue1: "#6BA4BB", // (Soft, mutedblue)
+        softblue2: "#7F8CC1", // (Cool,light-blue)
+        softorange: "#F3A712", // (Bright, warmorange)
         softrose: "#D8AAB7", // (Dusty rose)
         terracota: "#E3735E",
         terracotaLight: "#F5A193",
@@ -118,6 +121,9 @@ const mainTheme = createTheme({
         deepMochaBrown: "#4E3629",
         gentleSkyblue: "#94B7D4",
         warmTerraCota: "#B36B52",
+        cremita: "#fef1ee", // soft-light-salmon
+        cremitalight: "#fff7f5",
+        cremitadark: "#e2c9c5",
       },
     },
   },
@@ -126,7 +132,7 @@ const mainTheme = createTheme({
 const lightTheme = createTheme({
   palette: {
     primary: {
-      main: "#fef1ee", // salmon
+      main: "#fef1ee", // soft-light-salmon
       light: "#fff7f5",
       dark: "#e2c9c5",
     },
