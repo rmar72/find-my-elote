@@ -60,14 +60,15 @@ const ProductHeroLayout = (): JSX.Element => {
         <Button
           variant="contained"
           size="large"
-						sx={{
-						minWidth: 200,
-						bgcolor: "customPalette.softColors.terracota",
-						zIndex: 3,
-						"&:hover": {
-							bgcolor: "customPalette.softColors.terracotaLight",
-							color: "customPalette.softColors.terracota",
-						}}}
+          sx={{
+            minWidth: 200,
+            bgcolor: "customPalette.softColors.terracota",
+            zIndex: 3,
+            "&:hover": {
+              bgcolor: "customPalette.softColors.terracotaLight",
+              color: "customPalette.softColors.terracota",
+            },
+          }}
         >
           Register
         </Button>
@@ -76,7 +77,7 @@ const ProductHeroLayout = (): JSX.Element => {
           color="inherit"
           sx={{ color: "customPalette.white.dark", mt: 2, zIndex: 3 }}
         >
-        	Uplift Local Vendors
+          Uplift Local Vendors
         </Typography>
         <span>{"--->"}</span>
       </Box>
