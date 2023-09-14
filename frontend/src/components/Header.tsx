@@ -55,7 +55,9 @@ const Header = (): JSX.Element => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        <Logo />
+        <NavLink to={"/"}>
+          <Logo />
+        </NavLink>
       </Typography>
       <Divider />
       <Navigation />
@@ -87,6 +89,7 @@ const Header = (): JSX.Element => {
           />
         </Toolbar>
       </Appbar>
+
       {renderMenu}
 
       <Box component="nav">
