@@ -4,8 +4,7 @@ import EloteIcon from "./eloteIcon.png"
 const Logo: React.FC = () => {
   return (
     <span className="logo">
-      <img src={EloteIcon} height="25" width="25" alt="Corn Snack Icon" />
-      Find My Elote
+      <img src={EloteIcon} height="35" width="35" alt="Corn Snack Icon" />
     </span>
   )
 }
