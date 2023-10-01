@@ -3,6 +3,7 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet"
 import "./FoodMap.css"
 import L from "leaflet"
 import elote from "./output.png"
+import foodTruck from "../../assets/sushi1.png"
 import Container from "@mui/material/Container"
 
 const FoodMap: React.FC = () => {
@@ -19,8 +20,8 @@ const FoodMap: React.FC = () => {
   }
 
   const iconPerson = new L.Icon({
-    iconUrl: elote,
-    iconRetinaUrl: elote,
+    iconUrl: foodTruck,
+    iconRetinaUrl: foodTruck,
     iconSize: new L.Point(40, 55),
   })
 

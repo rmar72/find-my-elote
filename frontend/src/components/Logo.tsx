@@ -1,5 +1,5 @@
 import React from "react"
-import EloteIcon from "./eloteIcon.png"
+import EloteIcon from "../assets/eloteIcon.png"
 
 const Logo: React.FC = () => {
   return (

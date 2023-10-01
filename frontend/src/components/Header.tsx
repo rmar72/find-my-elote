@@ -12,7 +12,7 @@ import IconButton from "@mui/material/IconButton"
 import MenuIcon from "@mui/icons-material/Menu"
 import Avatar from "@mui/material/Avatar"
 import Logo from "./Logo"
-import avatarImage from "./avatar.jpg"
+import avatarImage from "../assets/avatar.jpg"
 import Navigation from "./Navigation"
 
 const Header = (): JSX.Element => {
