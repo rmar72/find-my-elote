@@ -12,5 +12,34 @@
     "status": "inactive",
     "latitude": "39.742043",
     "longitude": "-104.991531"
+  },
+  {
+    "id": "2",
+    "imageURL": "https://lh5.googleusercontent.com/p/AF1QipOR3A4aL4EDiB8SBWpa5DcwSB58RqAVy50p1rt1=w228-h228-n-k-no",
+    "icon": "Elotero",
+    "name": "El Botanaz",
+    "owner": "Gordo",
+    "food": "Mexican",
+    "city": "Denver",
+    "state": "CO",
+    "phoneNumber": "7205205234",
+    "status": "inactive",
+    "latitude": "39.742043",
+    "longitude": "-104.991531"
+  },
+  {
+    "id": "3",
+    "image-url": "https://lh5.googleusercontent.com/p/AF1QipOR3A4aL4EDiB8SBWpa5DcwSB58RqAVy50p1rt1=w228-h228-n-k-no",
+    "icon": "Elotero",
+    "name": "El Botanaz",
+    "owner": "Gordo",
+    "food": "Mexican",
+    "city": "Thornton",
+    "serving-cities": ["Thornton", "Denver", "Westminster"],
+    "state": "CO",
+    "phone-number": "7205205234",
+    "status": "inactive",
+    "latitude": "39.742043",
+    "longitude": "-104.991531"
   }
 ]
