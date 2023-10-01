@@ -8,7 +8,11 @@ function App() {
   return (
     <Stack>
       <Header />
-      <Container maxWidth={"xl"} disableGutters={true} sx={{ mt: "45px" }}>
+      <Container
+        maxWidth={"xl"}
+        disableGutters={true}
+        sx={{ mt: "45px", minHeight: "65vh" }}
+      >
         <Outlet />
       </Container>
       <Footer />

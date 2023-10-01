@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 
-interface User {
-  _id: number
+export interface User {
+  _id: string
   name: string
   email: string
 }
@@ -22,6 +22,7 @@ const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
+    // this only adds the token to our localstorage
     loginAuthHandler: (state, action: PayloadAction<User>) => {
       state.user = action.payload
       state.isAuthenticated = true

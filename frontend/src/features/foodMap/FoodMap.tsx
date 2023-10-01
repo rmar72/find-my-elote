@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react"
-import Layout from "../../components/Layout"
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet"
 import "./FoodMap.css"
 import L from "leaflet"
 import elote from "./output.png"
+import Container from "@mui/material/Container"
 
 const FoodMap: React.FC = () => {
   const myLocation = [39.899339, -104.940217]
@@ -64,10 +64,11 @@ const FoodMap: React.FC = () => {
   }
 
   return (
-    <Layout>
-      <button onClick={changeLoc} type="button">
-        Poll location
-      </button>
+    <Container
+      maxWidth={"xl"}
+      disableGutters={true}
+      sx={{ mt: "20px", p: "15px", bgcolor: "customPalette.black.dark" }}
+    >
       <MapContainer
         center={myLocation as any}
         zoom={15}
@@ -97,7 +98,7 @@ const FoodMap: React.FC = () => {
           </Popup>
         </Marker>
       </MapContainer>
-    </Layout>
+    </Container>
   )
 }
 

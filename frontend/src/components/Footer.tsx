@@ -50,9 +50,16 @@ export default function Footer() {
   return (
     <Typography
       component="footer"
-      sx={{ display: "flex", bgcolor: "customPalette.orange.light" }}
+      sx={{
+        display: "flex",
+        mt: 2,
+        bgcolor: "customPalette.black.dark",
+        borderTop: "10px solid #FFC7A0",
+      }}
     >
-      <Container sx={{ my: 8, display: "flex" }}>
+      <Container
+        sx={{ my: 8, display: "flex", color: "customPalette.white.main" }}
+      >
         <Grid container spacing={5}>
           <Grid item xs={6} sm={4} md={3}>
             <Grid
